@@ -1,4 +1,4 @@
-package tuan4;
+package tuan4list;
 
 public class Book {
 	int gia;
@@ -22,8 +22,15 @@ public class Book {
 		soLuong = sl;
 		nhaXuatBan = nhaXB;
 		loai = l;
+		
+		
 }
-	void inThongTin() {
-		System.out.println("Gia: "+ gia + "  " + "Gia Ban: "+ giaBan + "  " + "Nam Xuat Ban: "+ namXuatBan + "  " + "So Luong: "+ soLuong + "  " + "Nha Xuat Ban: "+ nhaXuatBan + "  " + "Loai: "+ loai);
-}	
+	@Override
+	public String toString() {
+		return "Book [gia=" + gia + ", giaBan=" + giaBan + ", namXuatBan=" + namXuatBan + ", soLuong=" + soLuong
+				+ ", nhaXuatBan=" + nhaXuatBan + ", loai=" + loai + "]";
+	}
+	public void showInfo() {
+		System.out.println(toString());
+	}
 }
